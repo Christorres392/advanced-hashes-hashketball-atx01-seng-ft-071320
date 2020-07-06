@@ -194,6 +194,7 @@ both_teams
                 binding.pry
           team_numbers << player_stats[:number]
          team_numbers
+          end
         end
       end
     end
