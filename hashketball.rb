@@ -191,6 +191,7 @@ both_teams
           data.each do |key, stats|
             if key == :players
               stats.each do |x|
+                binding.pry
           team_numbers << player_stats[:number]
          team_numbers
         end
