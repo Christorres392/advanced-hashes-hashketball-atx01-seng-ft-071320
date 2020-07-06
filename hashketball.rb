@@ -206,6 +206,7 @@ def player_stats (player_name)
     data[:players].each do |player|
       if player[:player_name] == player_name
         player
+        end
       end
     end
   end
