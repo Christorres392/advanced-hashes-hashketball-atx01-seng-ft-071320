@@ -1,4 +1,7 @@
 # Write your code below game_hash
+require 'pry'
+
+
 def game_hash
   {
     home: {
@@ -126,4 +129,18 @@ def game_hash
   }
 end
 
+#* Build a method, `num_points_scored` that takes in an argument of a player's
+#  name and returns the number of points scored for that player.
+
+def num_points_scored (player_name)
+#merged = game_hash[:home].merge(game_hash[:away])
+#binding.pry
+  game_hash.each do |loc, data|
+    data[:players].each do |player_stats|
+      if player_stats[:player_name] == player_name
+        return player_stats[:points]
+      end
+    end
+  end
+end
 # Write code here
