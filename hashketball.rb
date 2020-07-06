@@ -227,7 +227,6 @@ def player_stats (player_name)
         if player_stats[:shoe] > big_shoe
           big_shoe = player_stats[:shoe]
           rebounds = player_stats[:rebounds] 
-          binding.pry
         end
       end
     end
