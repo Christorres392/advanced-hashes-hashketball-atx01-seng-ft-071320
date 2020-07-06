@@ -189,7 +189,8 @@ both_teams
     game_hash.each do |loc, data|
         if data[:team_name] == team_name
           data.each do |key, stats|
-            binding.pry
+            if key == :players
+              stats.each do |x|
           team_numbers << player_stats[:number]
          team_numbers
         end
