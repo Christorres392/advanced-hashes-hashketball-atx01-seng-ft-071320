@@ -209,4 +209,5 @@ def player_stats (player_name)
         stats << player
     end
   end
+  stats
 end
