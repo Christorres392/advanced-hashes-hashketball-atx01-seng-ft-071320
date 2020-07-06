@@ -185,5 +185,6 @@ both_teams
 #    returns an `Array` of the jersey numbers for that team.
 
   def player_numbers (team_name)
+    game_hash.each do |loc, data|
     binding.pry
 end
