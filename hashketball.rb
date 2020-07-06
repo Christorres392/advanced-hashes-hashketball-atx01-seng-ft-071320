@@ -205,7 +205,8 @@ def player_stats (player_name)
   stats = {}
   game_hash.each do |loc, data|
     data[:players].each do |player|
-    binding.pry
+      if player[:player_name] == player_name
+        stats << player
     end
   end
 end
