@@ -143,4 +143,21 @@ def num_points_scored (player_name)
     end
   end
 end
-# Write code here
+
+#* Build a method, `shoe_size`, that takes in an argument of a player's name and
+#  returns the shoe size for that player.
+
+#  * Think about how you will find the shoe size of the correct player. How can
+#    you check and see if a player's name matches the name that has been passed
+  #  into the method as an argument?
+  def shoe_size (player_name)
+  #merged = game_hash[:home].merge(game_hash[:away])
+  #binding.pry
+    game_hash.each do |loc, data|
+      data[:players].each do |player_stats|
+        if player_stats[:player_name] == player_name
+          return player_stats[:shoe]
+        end
+      end
+    end
+  end
