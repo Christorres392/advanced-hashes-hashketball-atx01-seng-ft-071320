@@ -224,7 +224,10 @@ def player_stats (player_name)
     big_shoe = nil
     game_hash.each do |loc, data|
       data[:players].each do |player_stats|
-      binding.pry
+        if player_stats[:shoe] > big_shoe
+          big_shoe = player_stats[:shoe]
+          rebounds = player_stats[:rebounds]
       end
     end
+    rebounds
   end
