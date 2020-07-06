@@ -220,8 +220,8 @@ def player_stats (player_name)
   #  * Remember to think about return values here.
 
   def big_shoe_rebounds
-    rebounds = nil
-    big_shoe = nil
+    rebounds = 0
+    big_shoe = 0
     game_hash.each do |loc, data|
       data[:players].each do |player_stats|
         if player_stats[:shoe] > big_shoe
