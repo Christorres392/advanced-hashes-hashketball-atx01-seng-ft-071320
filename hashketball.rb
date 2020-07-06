@@ -186,6 +186,11 @@ both_teams
 
   def player_numbers (team_name)
     game_hash.each do |loc, data|
-    binding.pry
-end
-end
+      data[:players].each do |player_stats|
+        binding.pry
+        if player_stats[:player_name] == player_name
+          return player_stats[:shoe]
+        end
+      end
+    end
+  end
