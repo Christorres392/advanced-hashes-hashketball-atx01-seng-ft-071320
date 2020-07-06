@@ -163,14 +163,11 @@ end
   #* Build a method, `team_colors`, that takes in an argument of the team name and
   #  returns an `Array` of that team's colors.
 
-  def team_colors (team_name)
-    #binding.pry
+  def team_colors (team)
     game_hash.each do |loc, data|
-      data[:players].each do |player_stats|
-        binding.pry
-        if player_stats[:player_name] == player_name
-          return player_stats[:shoe]
+      binding.pry
+        if data[:team_name] == team
+          return data[:colors]
         end
       end
-    end
   end
