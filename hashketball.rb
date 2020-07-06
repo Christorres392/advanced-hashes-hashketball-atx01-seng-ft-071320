@@ -225,8 +225,8 @@ def player_stats (player_name)
     game_hash.each do |loc, data|
       data[:players].each do |player_stats|
         if player_stats[:shoe] > big_shoe
-          player_stats[:shoe] = big_shoe
-          player_stats[:rebounds] = rebounds
+          big_shoe = player_stats[:shoe]
+          rebounds = player_stats[:rebounds] 
           binding.pry
         end
       end
