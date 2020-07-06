@@ -192,10 +192,10 @@ both_teams
             if key == :players
               stats.each do |player_stats|
           team_numbers << player_stats[:number]
-         team_numbers
             end
           end
         end
       end
     end
+    return team_numbers
   end
