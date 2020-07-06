@@ -190,7 +190,7 @@ both_teams
       data[:players].each do |player_stats|
         if data[:team_name] == team_name
           team_numbers << player_stats[:number]
-          return team_numbers
+         team_numbers
           binding.pry
         end
       end
