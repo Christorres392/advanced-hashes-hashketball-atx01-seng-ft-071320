@@ -176,7 +176,8 @@ end
 
   def team_names
     both_teams = []
-    game_hash.each do |loc, data|
-binding.pry
+    both_teams << game_hash[:home][:team_name]
+    both_teams << game_hash[:away][:team_name]
+both_teams
         end
       end
