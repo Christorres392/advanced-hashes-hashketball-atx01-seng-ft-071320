@@ -175,10 +175,9 @@ end
   #  `Array` of the team names.
 
   def team_names
+    both_teams = []
     game_hash.each do |loc, data|
-      binding.pry
-        data[:team_name]
-          return data[:colors]
+      
         end
       end
   
