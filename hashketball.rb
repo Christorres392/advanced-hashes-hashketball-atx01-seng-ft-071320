@@ -176,7 +176,8 @@ end
 
   def team_names 
     game_hash.each do |loc, data|
-        if data[:team_name] == team
+      binding.pry
+        data[:team_name] 
           return data[:colors]
         end
       end
