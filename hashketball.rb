@@ -196,3 +196,14 @@ def player_numbers (team_name)
   end
   team_numbers
 end
+
+
+#* Build a method, `player_stats`, that takes in an argument of a player's name
+#  and returns a hash of that player's stats.
+
+def player_stats (player_name)  
+  stats = {}
+  game_hash.each do |loc, data|
+    binding.pry
+  end
+end
