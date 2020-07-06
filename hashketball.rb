@@ -222,4 +222,7 @@ def player_stats (player_name)
   def big_shoe_rebounds
     rebounds = nil
     big_shoe = nil
-    
+    game_hash.each do |loc, data|
+      binding.pry
+    end
+  end
