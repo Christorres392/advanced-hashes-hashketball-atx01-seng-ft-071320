@@ -223,6 +223,7 @@ def player_stats (player_name)
     rebounds = nil
     big_shoe = nil
     game_hash.each do |loc, data|
+      data.each do |player_stats|
       binding.pry
     end
   end
