@@ -184,21 +184,6 @@ both_teams
 #  * Build a method, `player_numbers`, that takes in an argument of a team name and
 #    returns an `Array` of the jersey numbers for that team.
 
-#  def player_numbers (team_name)
-#    team_numbers = []
-#    game_hash.each do |loc, data|
-#        if data[:team_name] == team_name
-#         data.each do |key, stats|
-#            if key == :players
-#              stats.each do |player_stats|
-#          team_numbers << player_stats[:number]
-#            end
-#          end
-#        end
-#      end
-#    end
-#    return team_numbers
-#  end
 
 def player_numbers (team_name)
   team_numbers = []
