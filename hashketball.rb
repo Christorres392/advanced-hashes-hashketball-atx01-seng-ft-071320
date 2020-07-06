@@ -174,10 +174,10 @@ end
   #* Build a method, `team_names`, that operates on the game `Hash` to return an
   #  `Array` of the team names.
 
-  def team_names 
+  def team_names
     game_hash.each do |loc, data|
       binding.pry
-        data[:team_name] 
+        data[:team_name]
           return data[:colors]
         end
       end
