@@ -225,5 +225,6 @@ def player_stats (player_name)
     game_hash.each do |loc, data|
       data.each do |player_stats|
       binding.pry
+      end
     end
   end
