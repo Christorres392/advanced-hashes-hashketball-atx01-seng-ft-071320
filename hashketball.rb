@@ -191,7 +191,6 @@ both_teams
         if data[:team_name] == team_name
           team_numbers << player_stats[:number]
          team_numbers
-          binding.pry
         end
       end
     end
