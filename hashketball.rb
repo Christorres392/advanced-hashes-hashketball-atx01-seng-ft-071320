@@ -188,3 +188,4 @@ both_teams
     game_hash.each do |loc, data|
     binding.pry
 end
+end
