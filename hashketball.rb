@@ -187,9 +187,8 @@ both_teams
   def player_numbers (team_name)
     game_hash.each do |loc, data|
       data[:players].each do |player_stats|
-        binding.pry
-        if player_stats[:player_name] == player_name
-          return player_stats[:shoe]
+        if data[:team_name] == team_name
+          return player_stats[:number]
         end
       end
     end
