@@ -230,5 +230,5 @@ def player_stats (player_name)
         end
       end
     end
-    rebounds
+    return rebounds
   end
