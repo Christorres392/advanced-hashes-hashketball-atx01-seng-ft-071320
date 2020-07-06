@@ -206,8 +206,8 @@ def player_numbers (team_name)
     data[:players].each do |player_stats|
       if data[:team_name] == team_name
         team_numbers << player_stats[:number]
-        team_numbers
       end
     end
   end
+  team_numbers
 end
