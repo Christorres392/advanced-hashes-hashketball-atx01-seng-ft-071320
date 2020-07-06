@@ -164,9 +164,10 @@ end
   #  returns an `Array` of that team's colors.
 
   def team_colors (team_name)
-    binding.pry
+    #binding.pry
     game_hash.each do |loc, data|
       data[:players].each do |player_stats|
+        binding.pry
         if player_stats[:player_name] == player_name
           return player_stats[:shoe]
         end
