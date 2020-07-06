@@ -179,5 +179,4 @@ end
     both_teams << game_hash[:home][:team_name]
     both_teams << game_hash[:away][:team_name]
 both_teams
-binding.pry
   end
