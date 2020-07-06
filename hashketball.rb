@@ -174,8 +174,7 @@ end
   #* Build a method, `team_names`, that operates on the game `Hash` to return an
   #  `Array` of the team names.
 
-  def team_names (team)
-    binding.pry
+  def team_names 
     game_hash.each do |loc, data|
         if data[:team_name] == team
           return data[:colors]
